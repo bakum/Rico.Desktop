@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{FAD3B9FD-8B43-4C21-A677-8359FF88B101}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="rico_olap.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="rico_olap">
+        <MSBuild Projects="rico_olap.dproj"/>
+    </Target>
+    <Target Name="rico_olap:Clean">
+        <MSBuild Projects="rico_olap.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="rico_olap:Make">
+        <MSBuild Projects="rico_olap.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="rico_olap"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="rico_olap:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="rico_olap:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
