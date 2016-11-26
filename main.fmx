@@ -3,7 +3,8 @@ object mForm: TmForm
   Top = 0
   Caption = 'Rico OLAP Modeler'
   ClientHeight = 480
-  ClientWidth = 640
+  ClientWidth = 865
+  Position = DesktopCenter
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]

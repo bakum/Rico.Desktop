@@ -1,28 +1,29 @@
 object dmData: TdmData
   OldCreateOrder = False
   Height = 369
-  Width = 553
+  Width = 613
   object FDPhysMSSQLDriverLink1: TFDPhysMSSQLDriverLink
-    Left = 376
-    Top = 80
+    ODBCDriver = 'SQL Server'
+    Left = 480
+    Top = 8
   end
   object Rico_olapConnection: TFDConnection
     Params.Strings = (
       'ConnectionDef=Rico_Olap')
     LoginPrompt = False
-    Transaction = readTransaction
-    UpdateTransaction = writeTransaction
-    Left = 177
-    Top = 167
+    Transaction = trRead
+    UpdateTransaction = trWrite
+    Left = 345
+    Top = 7
   end
-  object readTransaction: TFDTransaction
+  object trRead: TFDTransaction
     Connection = Rico_olapConnection
-    Left = 360
-    Top = 184
+    Left = 480
+    Top = 64
   end
-  object writeTransaction: TFDTransaction
+  object trWrite: TFDTransaction
     Connection = Rico_olapConnection
-    Left = 360
-    Top = 264
+    Left = 424
+    Top = 64
   end
 end

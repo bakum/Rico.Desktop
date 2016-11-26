@@ -12,8 +12,8 @@ type
   TdmData = class(TDataModule)
     FDPhysMSSQLDriverLink1: TFDPhysMSSQLDriverLink;
     Rico_olapConnection: TFDConnection;
-    readTransaction: TFDTransaction;
-    writeTransaction: TFDTransaction;
+    trRead: TFDTransaction;
+    trWrite: TFDTransaction;
   private
     { Private declarations }
   public
