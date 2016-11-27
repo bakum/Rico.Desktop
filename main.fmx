@@ -9,4 +9,40 @@ object mForm: TmForm
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 816
+    Top = 8
+  end
+  object mnuMain: TMainMenu
+    Left = 512
+    Top = 152
+    object miFile: TMenuItem
+      Text = 'File'
+      object miExit: TMenuItem
+        Action = FileExit1
+        Enabled = True
+        Locked = True
+        ImageIndex = 43
+      end
+    end
+    object miOptions: TMenuItem
+      Text = 'Options'
+      object miSettings: TMenuItem
+        Locked = True
+        Text = 'Settings'
+      end
+    end
+  end
+  object alMain: TActionList
+    Left = 720
+    Top = 16
+    object FileExit1: TFileExit
+      Category = 'File'
+      Hint = 'Quit|Quits the application'
+      ImageIndex = 43
+      ShortCut = 32883
+      ImageIndex = 43
+    end
+  end
 end

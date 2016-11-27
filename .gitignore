@@ -4,3 +4,4 @@
 *.groupproj.local
 *.stat
 *.identcache
+*.s3db
