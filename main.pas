@@ -20,6 +20,7 @@ type
     miSettings: TMenuItem;
     alMain: TActionList;
     FileExit1: TFileExit;
+    Lang1: TLang;
     
   private
     { Private declarations }

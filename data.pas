@@ -27,6 +27,7 @@ type
     VwreferenceViewV8_ObjectID: TBCDField;
     VwreferenceViewTableName: TWideStringField;
     VwreferenceViewV8_ObjectOwnerID: TBCDField;
+    scrAddViews: TFDScript;
   private
     { Private declarations }
   public

@@ -69,7 +69,7 @@ ALTER DATABASE rico_olap
   SET ALLOW_SNAPSHOT_ISOLATION OFF
 GO
 
-USE test
+USE rico_olap
 GO
 
 IF DB_NAME() <> N'rico_olap' SET NOEXEC ON
