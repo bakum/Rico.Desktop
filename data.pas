@@ -18,8 +18,6 @@ var
 
 implementation
 
-{%CLASSGROUP 'FMX.Controls.TControl'}
-
 {$R *.dfm}
 
 end.

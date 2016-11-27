@@ -1,0 +1,5 @@
+inherited mForm_LgXhdpiTb: TmForm_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 0
+end
