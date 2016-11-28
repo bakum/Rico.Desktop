@@ -4,8 +4,12 @@ object dmData: TdmData
   Width = 613
   object Rico_olapConnection: TFDConnection
     Params.Strings = (
-      'ConnectionDef=Rico_Olap')
-    Connected = True
+      'MARS=No'
+      'User_Name=sa'
+      'Password=cegthgegth1!'
+      'Database=rico_olap'
+      'Server=localhost'
+      'DriverID=MSSQL')
     LoginPrompt = False
     Left = 439
     Top = 12
